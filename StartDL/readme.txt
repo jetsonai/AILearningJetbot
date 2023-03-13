@@ -1,5 +1,6 @@
 cd
-cd jetbot_new/StartDL
+cd jetsonai/AILearningJetbot
+
 chmod 777 *.sh
 
 ./install-pytorch.sh
@@ -26,13 +27,6 @@ cd installSwapfile
 
 sudo reboot
 
-
-==========================
-
-
-https://drive.google.com/file/d/1frWwo_3JdaJ7uGzj5SyzV7275UnsGmZV/view?usp=sharing
-
-https://drive.google.com/file/d/1VjQNJPG2g96jnNFqXgjG1Pv-X9wHKUvs/view?usp=sharing
 
 
 
