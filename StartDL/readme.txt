@@ -1,5 +1,5 @@
 cd
-cd jetsonai/AILearningJetbot/StartDL
+cd AILearningJetbot/StartDL
 
 chmod 777 *.sh
 
