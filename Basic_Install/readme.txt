@@ -1,6 +1,6 @@
-git clone https://github.com/katebrighteyes/jetbot_new
+git clone https://github.com/jetsonai/AILearningJetbot
 
-cd jetbot_new/Basic_Install
+cd AILearningJetbot/Basic_Install
 
 chmod 777 install_jetbot_basic.sh
 ./install_jetbot_basic.sh
