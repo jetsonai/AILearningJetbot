@@ -46,7 +46,7 @@ motor_right = motor_driver.getMotor(motor_right_ID)
 set_speed(motor_left_ID,   0.5)
 set_speed(motor_right_ID,  0.5)
 
-time.sleep(1.0)
+time.sleep(3.0)
 
 # stop the motors as precaution
 all_stop()
