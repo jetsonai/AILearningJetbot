@@ -1,0 +1,45 @@
+1. vino
+sudo vi /usr/share/glib-2.0/schemas/org.gnome.Vino.gschema.xml
+
+========================================================================
+    </key>
+
+    <key name='notify-on-connect' type='b'>
+      <summary>Notify on connect</summary>
+      <description>
+        If true, show a notification when a user connects to the system.
+      </description>
+      <default>true</default>
+    </key>
+    <key name='enabled' type='b'>
+        <summary>Enable remote access to the desktop</summary>
+            <description>
+                If true, allows remote access to the desktop via the RFB
+                protocol. Users on remote machines may then connect to the
+                desktop using a VNC viewer.
+            </description>
+        <default>false</default>
+    </key>
+    
+  </schema>
+</schemalist>
+
+=========================================================================
+
+sudo glib-compile-schemas /usr/share/glib-2.0/schemas
+gsettings set org.gnome.Vino require-encryption false
+gsettings set org.gnome.Vino prompt-enabled false
+
+2.
+설정(Settings) 아이콘을 클릭하고 검색창에서 desktop을 입력하여 Desktop Sharing 아이콘을 클릭합니다. 
+Allow other users to view your desktop을 체크하고, 
+You must confirm each access to this machine은 체크를 해제합니다. 
+Require the user to enter this password를 체크하고 암호를 입력합니다.
+
+3.
+젯슨 나노 상단에 우분투 버튼 클릭후 'start' 입력 후 'startup' 들어가기
+
+Add 누르고 차례로 입력후 Add 하고
+이름(자유) : Vino 
+명령 : /usr/lib/vino/vino-server
+설명(자유) : Vino VNC Server
