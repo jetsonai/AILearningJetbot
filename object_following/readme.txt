@@ -67,3 +67,7 @@ python3 detectnet_test.py
 python3 following_test.py
 
 
+detectnet --model=onnx/ssd-mobilenet.onnx --labels=onnx/labels.txt  --input-blob=input_0 --output-cvg=scores --output-bbox=boxes  csi://0
+
+
+
