@@ -28,7 +28,7 @@ def xy_uuid(x, y):
 def imageCopy(src):
     return np.copy(src)
 
-def Video(openpath):
+def videoProcess(openpath):
 
     DATASET_DIR = 'dataset_xy'
     
@@ -93,4 +93,4 @@ def Video(openpath):
     return
    
 if __name__=="__main__":
-    Video(gst_str)
+    videoProcess(gst_str)
