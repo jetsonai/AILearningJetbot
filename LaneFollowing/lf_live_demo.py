@@ -99,7 +99,7 @@ def imageProcessing(output):
     executeModel(output)
     return output
 
-def Video(openpath, savepath = None):
+def videoProcess(openpath, savepath = None):
     cap = cv2.VideoCapture(openpath)
     if cap.isOpened():
         print("Video Opened")
@@ -125,11 +125,8 @@ def Video(openpath, savepath = None):
             ret, frame = cap.read()
             if ret:
                 # Our operations on the frame come here
-
-                #frame = cv2.resize(frame, dsize=(224, 224), interpolation=cv2.INTER_AREA)
                 output = imageProcessing(frame)
 			
-
                 cv2.imshow("Input", frame)			
 
             else:
@@ -169,18 +166,7 @@ motor_right_ID = 2
 motor_left = motor_driver.getMotor(motor_left_ID)
 motor_right = motor_driver.getMotor(motor_right_ID)
 
-
-'''
-speed_value = speed_gain_value
-
-angle = 0
-pid = angle * steering_value + (angle - angle_last) * steering_dgain_value
-angle_last = angle
-    
-steering_value = pid + steering_bias_value
-print(steering_value)
-'''
 print("motor_driver ready")
 
-Video(gst_str)
-#robot.stop()
+videoProcess(gst_str)
+
