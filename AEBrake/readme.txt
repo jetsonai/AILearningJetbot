@@ -1,9 +1,9 @@
 * YOU MUST INSTALL PYTORCH BEFORE START THIS.!!
 
-* IF NOT : 
+* 딥러닝 패키지 설치가 아직 되지 않았다면 먼저 설치가 필요합니다.: 
    go to tis page to Install DL setting 
    
-   https://github.com/katebrighteyes/jetbot_new/tree/main/StartDL
+   https://github.com/jetsonai/AILearningJetbot/tree/main/StartDL
    
 
 1. data_collection
@@ -13,7 +13,7 @@ save_block=0 # 0: free, 1:block
 
 1) Take Blocked Picture
 
-python3 data_collection2.py 1
+python3 aeb_data_collection.py 1
 
 # press 's' to take picture
 (collect picture more than 40)
@@ -22,7 +22,7 @@ python3 data_collection2.py 1
 
 2) Take Free Picture
 
-python3 data_collection2.py 0
+python3 aeb_data_collection.py 0
 
 # press 's' to take picture
 (collect picture more than 40)
@@ -32,7 +32,7 @@ python3 data_collection2.py 0
 ----------------------------------------
 2. train_fca_model
 
-python3 train_fca_model.py
+python3 train_aeb_model.py                                                                                                                                                     
 
 ----------------------------------------
 
@@ -40,4 +40,4 @@ python3 train_fca_model.py
 
 3. fca_live_demo
 
-python3 fca_live_demo.py
+python3 aeb_live_demo.py
