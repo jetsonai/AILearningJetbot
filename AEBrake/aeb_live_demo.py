@@ -48,23 +48,22 @@ def imageProcessing(frame):
     return
 
 def set_speed(motor_ID, value):
-	max_pwm = 115.0
-	speed = int(min(max(abs(value * max_pwm), 0), max_pwm))
+    max_pwm = 115.0
+    speed = int(min(max(abs(value * max_pwm), 0), max_pwm))
 
-	if motor_ID == 1:
-		motor = motor_left
-	elif motor_ID == 2:
-		motor = motor_right
-	else:
-		return
-	
-	motor.setSpeed(speed)
+    if motor_ID == 1:
+        motor = motor_left
+    elif motor_ID == 2:
+        motor = motor_right
+    else:
+        return
 
-	if value > 0:
-		motor.run(Adafruit_MotorHAT.FORWARD)
-	else:
-		motor.run(Adafruit_MotorHAT.BACKWARD)
+    motor.setSpeed(speed)
 
+    if value > 0:
+	motor.run(Adafruit_MotorHAT.BACKWARD)
+    else:
+        motor.run(Adafruit_MotorHAT.FORWARD)
 
 # stops all motors
 def all_stop():
