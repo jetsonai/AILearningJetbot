@@ -171,7 +171,6 @@ class Adafruit_DCMotor:
         self.MC = controller
         self.motornum = num
         pwm = in1 = in2 = 0
-        print('num:{}'.format(num))
 
         if (num == 0):
                  pwm = 8
@@ -196,7 +195,6 @@ class Adafruit_DCMotor:
         self.IN2pin = in2
 
     def run(self, command):
-        print('run:{} motornum:{}'.format(command, self.motornum))
         if not self.MC:
             return
         if (command == Adafruit_MotorHAT.FORWARD):
@@ -209,7 +207,6 @@ class Adafruit_DCMotor:
             self.MC.setPin(self.IN1pin, 0)
             self.MC.setPin(self.IN2pin, 0)
     def setSpeed(self, speed):
-        print('setSpeed:{}'.format(speed))
         if (speed < 0):
             speed = 0
         if (speed > 255):
