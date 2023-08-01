@@ -9,6 +9,7 @@ jtop
 python3
 
 import torch
+
 import torchvision
 
 git clone https://github.com/JetsonHacksNano/installSwapfile
