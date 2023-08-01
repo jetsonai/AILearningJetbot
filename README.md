@@ -1,5 +1,10 @@
 # hibus JetbotEx
 
+git clone -b hibusJetbot --single-branch https://github.com/jetsonai/AILearningJetbot
+
+
+
+
 jtop
 
 스왑을 먼저해야함.
