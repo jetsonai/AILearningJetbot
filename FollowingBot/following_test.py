@@ -16,9 +16,9 @@ def set_speed(motor_ID, value):
     max_pwm = 115.0
     speed = int(min(max(abs(value * max_pwm), 0), max_pwm))
 
-    if motor_ID == 1:
+    if motor_ID == 3:
 	    motor = motor_left
-    elif motor_ID == 2:
+    elif motor_ID == 4:
 	    motor = motor_right
     else:
 	    return
@@ -26,9 +26,9 @@ def set_speed(motor_ID, value):
     motor.setSpeed(speed)
 
     if value > 0:
-	motor.run(Adafruit_MotorHAT.BACKWARD)
+	motor.run(Adafruit_MotorHAT.FORWARD)
     else:
-        motor.run(Adafruit_MotorHAT.FORWARD)
+        motor.run(Adafruit_MotorHAT.BACKWARD)
 
 # stops all motors
 def all_stop():
@@ -39,10 +39,10 @@ def all_stop():
     motor_right.run(Adafruit_MotorHAT.RELEASE)
 
 
-motor_driver = Adafruit_MotorHAT(i2c_bus=1)
+motor_driver = Adafruit_MotorHAT(i2c_bus=0)
 
-motor_left_ID = 1
-motor_right_ID = 2
+motor_left_ID = 3
+motor_right_ID = 4
 
 motor_left = motor_driver.getMotor(motor_left_ID)
 motor_right = motor_driver.getMotor(motor_right_ID)
