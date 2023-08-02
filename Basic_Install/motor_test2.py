@@ -50,8 +50,8 @@ time.sleep(1.0)
 
 try:
     while 1:
-        set_speed(motor_left_ID,   0.5)
-        set_speed(motor_right_ID,  0.5)
+        set_speed(motor_left_ID,   0.7)
+        set_speed(motor_right_ID,  0.7)
 
         time.sleep(1.0)
 
