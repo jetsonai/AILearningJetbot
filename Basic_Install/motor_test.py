@@ -43,8 +43,8 @@ motor_right_ID = 4
 motor_left = motor_driver.getMotor(motor_left_ID)
 motor_right = motor_driver.getMotor(motor_right_ID)
 
-set_speed(motor_left_ID,   0.5)
-set_speed(motor_right_ID,  0.5)
+set_speed(motor_left_ID,   0.7)
+set_speed(motor_right_ID,  0.7)
 
 time.sleep(3.0)
 
