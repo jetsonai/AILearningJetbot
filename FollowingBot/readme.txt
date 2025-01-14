@@ -8,7 +8,11 @@ git clone https://github.com/dusty-nv/jetson-inference
 
 cd jetson-inference
 
-git checkout 19ed62150b3e9499bad2ed6be1960dd38002bb7d
+git checkout 19ed62150b3e9499bad2ed6be1960dd38002bb7d 
+
+- 3.5.1
+
+( git checkout 01a395892ecc8acdbec4d8e9d6e8ac676416a507 ) - 4.6.1
 
 git submodule update --init
 
