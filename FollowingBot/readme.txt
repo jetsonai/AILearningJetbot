@@ -12,14 +12,20 @@ cd jetson-inference
 git checkout 19ed62150b3e9499bad2ed6be1960dd38002bb7d 
 
 # In Case Of Jetpack 4.6.1 
-git checkout 01a395892ecc8acdbec4d8e9d6e8ac676416a507
+git checkout 0f1f328f0d4c24dfb4074a1d0d8e06a3d6c60ee4
 
 git submodule update --init
 
 # build from source
 mkdir build
 cd build
+
+# In Case Of Jetpack 4.5.1 
 cmake ../
+
+# In Case Of Jetpack 4.6.1 
+cmake -DENABLE_NVMM=OFF ../
+
 make
 
 # install libraries
