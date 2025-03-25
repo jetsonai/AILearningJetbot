@@ -85,4 +85,7 @@ cd  ~/pytorch-ssd
 
 python3 following_test.py --model=onnx/ssd-mobilenet.onnx --labels=onnx/labels.txt  --input-blob=input_0 --output-cvg=scores --output-bbox=boxes
 
+* 사람을 감지하여 움직이다가 사람이 안 보일때 멈추는 코드를 추가해보세요.
+
+
 
