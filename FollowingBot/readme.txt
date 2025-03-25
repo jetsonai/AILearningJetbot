@@ -81,6 +81,8 @@ python3 detectnet_test.py
 
 python3 following_test.py
 
+검출하고자 하는 타겟으로 번호를 변경하세요.
+
 cd  ~/pytorch-ssd
 
 python3 following_test.py --model=onnx/ssd-mobilenet.onnx --labels=onnx/labels.txt  --input-blob=input_0 --output-cvg=scores --output-bbox=boxes
