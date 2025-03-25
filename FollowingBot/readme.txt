@@ -12,8 +12,7 @@ cd jetson-inference
 git checkout 19ed62150b3e9499bad2ed6be1960dd38002bb7d 
 
 # In Case Of Jetpack 4.6.1 
-git checkout 01a395892ecc8acdbec4d8e9d6e8ac676416a507   --
-git checkout 0f1f328f0d4c24dfb4074a1d0d8e06a3d6c60ee4
+git checkout 01a395892ecc8acdbec4d8e9d6e8ac676416a507   
 
 git submodule update --init
 
@@ -56,8 +55,8 @@ mOptions.flipMethod = videoOptions::FLIP_HORIZONTAL;
 
 gedit camera/gstCamera.h
 
-modify DefaultWidth (196 line) -> 224
-modify Defaultheight (201 line) -> 224 
+modify DefaultWidth (196 line) -> 640
+modify Defaultheight (201 line) -> 480 
 
 # at build terminal 
 
