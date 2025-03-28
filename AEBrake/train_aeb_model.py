@@ -28,7 +28,11 @@ dataset = datasets.ImageFolder(
     ])
 )
 
-train_dataset, test_dataset = torch.utils.data.random_split(dataset, [len(dataset) - 50, 50])
+# train_dataset, test_dataset = torch.utils.data.random_split(dataset, [len(dataset) - 50, 50])
+
+test_percent = 0.2
+num_test = int(test_percent * len(dataset))
+train_dataset, test_dataset = torch.utils.data.random_split(dataset, [len(dataset) - num_test, num_test])
 
 train_loader = torch.utils.data.DataLoader(
     train_dataset,
