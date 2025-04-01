@@ -1,28 +1,19 @@
-1. install MotorHAT
+1. install python3 ros
 
-sudo apt-get install python-pip
+$ sudo apt-get install python3-pip python3-yaml
+$ sudo pip3 install rospkg catkin_pkg
 
-# install Adafruit libraries
-python pip install Adafruit-MotorHAT
-pip install Adafruit-SSD1306
+
+확인
+$ python3
+>>> import rospy
+>>> import cv_bridge
 
 ----------------------------
 
 2. jetbot ros_deep_learning
 
 sudo apt-get install ros-melodic-vision-msgs ros-melodic-image-transport ros-melodic-image-publisher
-
-# clone the repo
-cd ~/catkin_ws/src
-git clone -b ros1 https://github.com/dusty-nv/ros_deep_learning
-
-# make ros_deep_learning
-cd ../    # cd ~/catkin_ws
-catkin_make
-
-# confirm that the package can be found
-$ rospack find ros_deep_learning
-/home/nvidia/catkin_ws/src/ros_deep_learning
 
 -----------------------------------
 
