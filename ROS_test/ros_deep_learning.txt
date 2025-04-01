@@ -14,6 +14,7 @@ $ python3
 2. jetbot ros_deep_learning
 
 sudo apt-get install ros-melodic-vision-msgs ros-melodic-image-transport ros-melodic-image-publisher
+pip3 install netifaces
 
 -----------------------------------
 
@@ -36,6 +37,10 @@ $ rospack find jetbot_ros
 #First open a new terminal, and start roscore
 
 roscore
+
+# modify srcipts/jetbot_motors.py like below : 
+
+#!/usr/bin/env python3
 
 rosrun jetbot_ros jetbot_motors.py
 
