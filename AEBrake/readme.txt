@@ -38,6 +38,8 @@ python3 train_aeb_model.py
 
 * YOU MUST set power mod 5W !!
 
+https://colab.research.google.com/drive/1FLNqYzlqOTkDhkurJCK-YlJ7xaEipvhV
+
 3. fca_live_demo
 
 python3 aeb_live_demo.py
