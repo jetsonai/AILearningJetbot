@@ -38,7 +38,9 @@ python3 train_aeb_model.py
 
 * YOU MUST set power mod 5W !!
 
-https://colab.research.google.com/drive/1FLNqYzlqOTkDhkurJCK-YlJ7xaEipvhV
+model = models.resnet18(pretrained=True)
+num_ftrs = model.fc.in_features
+model.fc = nn.Linear(num_ftrs, 38)
 
 3. fca_live_demo
 
